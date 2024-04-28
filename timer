@@ -24,3 +24,16 @@
     </style>
 </head>
 <body>
+   <h1>Simple Timer</h1>
+    <div class="timer" id="timer">00:00:00</div>
+    <div class="controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <script>
+        let timerInterval;
+        let seconds = 0;
+        let minutes = 0;
+        let hours = 0;
