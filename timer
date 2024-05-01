@@ -66,4 +66,13 @@
                     hours++;
                 }
             }
+            document.getElementById('timer').textContent = pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+        }
+
+        function pad(value) {
+            return value < 10 ? '0' + value : value;
+        }
+    </script>
+</body>
+</html>
 
